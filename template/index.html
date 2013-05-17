@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>НОВАТЭК</title>
+		<meta name="description" content="Керамзитные блоки, Уфа">
+		<link href="styles/style.css" rel="stylesheet">
+		<link href="styles/slider.css" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="js/slides.min.jquery.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('#slider').slides({
+					preload: true,
+					preloadImage: 'img/loading.gif',
+					effect: 'fade',
+					crossfade: true,
+					slideSpeed: 350,
+					fadeSpeed: 500,
+					play: 5000
+					});
+			});
+		</script>
+		
+	</head>
+	<body>
+	  <div id="wrapper">
+
+		<header>
+		  <div id="logo">
+			<h1 id="head">
+			  <a href="index.html"><span>НОВАТЭК</span><span class="line-v"></span>
+				<span id="head-mini">ГРУПП</span></a>
+			</h1>
+		  </div>
+		  <div class="line-h bg-gradient-gray"> </div>
+		  <div id="panel-info">
+ 			<p id="address" class="span2">Уфа Алатауская 7</p>
+			<p id="phone" class="span2">+7(347) 246 57 77</p>
+			<p id="email" class="span2">info@novatech-group.ru</p>
+		  </div>
+		  <div class="line-h bg-gradient-gray"> </div>
+		</header>
+		<nav>
+		  <ul>
+			<li> <a href="">ABOUT US<img src="" alt="" />
+				О КОМПАНИИ</a>
+			</li>
+			<li><a href="">PRODUCTS<img src="" alt="" />
+				ПРОДУКЦИЯ</a>
+			</li>
+			<li><a href="">TECHNOLOGY<img src="" alt="" />
+				ТЕХНОЛОГИИ</a>
+			</li>
+			<li><a href="">TO CUSTOMERS<img src="" alt="" />
+				ЗАКАЗЧИКАМ</a>
+			</li>
+			<li><a href="">VACANCY<img src="" alt="" />
+				ВАКАНСИИ</a>
+			</li>
+			<li><a href="">CONTACTS<img src="" alt="" />
+				КОНТАКТЫ</a>
+			</li>
+		  </ul>
+		</nav>
+
+		<div id='slider'>
+		  <div id="left_arrow" class="prev"></div>
+		  <div class="slides_container">
+			<div>
+			  <a href="#" title=""><img src="img/slide1.jpg" alt="" /></a>
+			</div>
+			<div>
+			  <a href="#" title=""><img src="img/slide2.jpg" alt="" /></a>
+			</div>
+			<div>
+			  <a href="#" title=""><img src="img/slide1.jpg" alt="" /></a>
+			</div>
+		  </div>			
+		  <div id="right_arrow" class="next"></div>
+		</div>
+
+		<div id="panel_news">
+
+		  <div> 
+			<p><span>NEWS</span> <img src="" alt=""> <span>НОВОСТИ</span>
+		  </div>
+		  <div>
+			<div id="arrow-news-left"></div>
+			<img src="" alt="">
+			<img src="" alt="">
+			<img src="" alt="">
+			<img src="" alt="">
+			<img src="" alt="">
+			<img src="" alt="">
+			<img src="" alt="">
+			<div id="arrow-news-right"></div>
+		  </div>
+		</div>
+		<p>Автоматика комплекса чистых помещений</p>
+
+		<footer>
+		  <p>ООО "НОВАТЭК-ГРУПП" 2013 г.</p>
+		</footer>
+	  </div>
+	</body>
+</html>
