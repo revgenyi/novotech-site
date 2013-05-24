@@ -10,98 +10,111 @@
 		<script src="js/slides.min.jquery.js" type="text/javascript"></script>
 		<script type="text/javascript">
 			$(function(){
-				$('#slider').slides({
-					preload: true,
-					preloadImage: 'img/loading.gif',
-					effect: 'fade',
-					crossfade: true,
-					slideSpeed: 350,
-					fadeSpeed: 500,
-					play: 5000
+					$('#slider').slides({
+	preload: true,
+	preloadImage: 'img/loading.gif',
+	effect: 'fade',
+	crossfade: true,
+	slideSpeed: 350,
+	fadeSpeed: 500,
+	play: 5000
+	});
 					});
-			});
 		</script>
+		<script src="js/jquery.bxslider.min.js"></script>
+		<link href="styles/jquery.bxslider.css" rel="stylesheet" />
+		<script type="text/javascript">
+			$(document).ready(function(){
+			$('.bxslider').bxSlider({
+  minSlides: 4,
+  maxSlides: 6,
+  slideWidth: 110,
+  slideMargin: 4,
+	contorols: false
+});
+			});
+</script>
+
 		
+
 	</head>
 	<body>
-	  <div id="wrapper">
+		<div id="wrapper">
 
-		<header>
-		  <div id="logo">
-			<h1 id="head">
-			  <a href="index.html"><span>НОВАТЭК</span><span class="line-v"></span>
-				<span id="head-mini">ГРУПП</span></a>
-			</h1>
-		  </div>
-		  <div class="line-h bg-gradient-gray"> </div>
-		  <div id="panel-info">
- 			<p id="address" class="span2">Уфа Алатауская 7</p>
-			<p id="phone" class="span2">+7(347) 246 57 77</p>
-			<p id="email" class="span2">info@novatech-group.ru</p>
-		  </div>
-		  <div class="line-h bg-gradient-gray"> </div>
-		</header>
-		<nav>
-		  <ul>
-			<li> <a href="">ABOUT US<img src="" alt="" />
-				О КОМПАНИИ</a>
-			</li>
-			<li><a href="">PRODUCTS<img src="" alt="" />
-				ПРОДУКЦИЯ</a>
-			</li>
-			<li><a href="">TECHNOLOGY<img src="" alt="" />
-				ТЕХНОЛОГИИ</a>
-			</li>
-			<li><a href="">TO CUSTOMERS<img src="" alt="" />
-				ЗАКАЗЧИКАМ</a>
-			</li>
-			<li><a href="">VACANCY<img src="" alt="" />
-				ВАКАНСИИ</a>
-			</li>
-			<li><a href="">CONTACTS<img src="" alt="" />
-				КОНТАКТЫ</a>
-			</li>
-		  </ul>
-		</nav>
+			<header>
+			<div id="logo">
+				<div id="head">
+					<a href="index.html" class=''><span class='font-logo font-logo-big'>НОВАТЭК</span><span class="line-v"></span>
+					<span class='font-logo font-logo-small pt5'>ГРУПП</span></a>
+				</div>
+			</div>
+			<div class="line-h bg-gradient-gray"> </div>
+			<div id="panel-info" class=''>
+				<p id="address">
+					<img src="img/icon-address.png">
+					<span class="font-myriadPro">Уфа Алатауская 7, а/я 41</span>
+				</p>
+				<p id="phone" class="font-myriadPro">
+					<img src="img/icon-address.png">
+					<span class="font-myriadPro">+7(347) 246 57 77</span>
+				</p>
+				<p id="email" class="font-myriadPro">
+					<img src="img/icon-address.png">
+					<span class="font-myriadPro">info@novatech-group.ru</span>
+				</p>
+			</div>
+			<div class="line-h bg-gradient-gray"> </div>
+			</header>
 
-		<div id='slider'>
-		  <div id="left_arrow" class="prev"></div>
-		  <div class="slides_container">
-			<div>
-			  <a href="#" title=""><img src="img/slide1.jpg" alt="" /></a>
+			<nav>
+			<ul id="menu">
+				<li><a id="about" title="О компании" href="about.html">О компании</a></li>
+				<li><a id="products" title="Продукция" href="products.html">Продукция</a></li>
+				<li><a id="technology" title="Технологии" href="technology.html">Технологии</a></li>
+				<li><a id="tocustomers" title="Заказчикам" href="customers.html">Заказчикам</a></li>
+				<li><a id="vacancy" title="Вакансии" href="vacancy.html">Вакансии</a></li>
+				<li><a id="contacts" title="Контакты" href="contacts.html">Контакты</a></li>
+			</ul>
+			</nav>
+
+			<div id='slider'>
+				<div id="left_arrow" class="prev"></div>
+				<div class="slides_container">
+					<div>
+						<a href="product1.html" title=""><img src="img/slide-01.jpg" alt="" /></a>
+					</div>
+					<div>
+						<a href="product1.html" title=""><img src="img/slide-02.jpg" alt="" /></a>
+					</div>
+					<div>
+						<a href="product1.html" title=""><img src="img/slide-03.jpg" alt="" /></a>
+					</div>
+				</div>			
+				<div id="right_arrow" class="next"></div>
 			</div>
-			<div>
-			  <a href="#" title=""><img src="img/slide2.jpg" alt="" /></a>
+
+			<div id="panel-news">
+				<div id="news"> 
+					<img src="img/img-news.jpg" alt="">
+				</div>
+				<div class='ml-140'>
+					<div class='border-news'></div>
+					<ul class="bxslider">
+						<li><img src="img/img-news-01.jpg" alt=""></li>
+						<li><img src="img/img-news-02.jpg" alt=""></li>
+						<li><img src="img/img-news-01.jpg" alt=""></li>
+						<li><img src="img/img-news-01.jpg" alt=""></li>
+						<li><img src="img/img-news-02.jpg" alt=""></li>
+						<li><img src="img/img-news-02.jpg" alt=""></li>
+						<li><img src="img/img-news-01.jpg" alt=""></li>
+						<li><img src="img/img-news-02.jpg" alt=""></li>
+					</ul>
+					<div class='border-news'></div>
 			</div>
-			<div>
-			  <a href="#" title=""><img src="img/slide1.jpg" alt="" /></a>
 			</div>
-		  </div>			
-		  <div id="right_arrow" class="next"></div>
+			<footer>
+				<p id='footer-text' class='span6 font-myriadPro text-small'>ООО "НОВАТЭК-ГРУПП" 2013 г.</p>
+			</footer>
 		</div>
-
-		<div id="panel_news">
-
-		  <div> 
-			<p><span>NEWS</span> <img src="" alt=""> <span>НОВОСТИ</span>
-		  </div>
-		  <div>
-			<div id="arrow-news-left"></div>
-			<img src="" alt="">
-			<img src="" alt="">
-			<img src="" alt="">
-			<img src="" alt="">
-			<img src="" alt="">
-			<img src="" alt="">
-			<img src="" alt="">
-			<div id="arrow-news-right"></div>
-		  </div>
-		</div>
-		<p>Автоматика комплекса чистых помещений</p>
-
-		<footer>
-		  <p>ООО "НОВАТЭК-ГРУПП" 2013 г.</p>
-		</footer>
-	  </div>
 	</body>
 </html>

@@ -1,69 +1,70 @@
 /*-----------------Слайдер----------------*/
 #slider {
-height: 490px;
-width:960px;
+	margin:0 auto; 
+	margin-top:30px;
+	height: 200px;
+	width:840px;
 }
 
 #left_arrow, #right_arrow {
-cursor:pointer;
-width: 50px;
-height: 490px;
-position:absolute;
-z-index:1000;
+	cursor:pointer;
+	width: 50px;
+	height: 200px;
+	position:absolute;
+	z-index:1000;
 }
 #left_arrow {
-	background: url(../img/btn_prev01.png) no-repeat center;
-
-float:left;
+	background: url(../img/arrows-slider.png) no-repeat;
+	float:left;
 }
 #left_arrow:hover {
-background: url(../img/btn_prev02.png) no-repeat center;
+	background-position: -50px 0;
 }
 #right_arrow {
-background: url(../img/btn_next01.png) no-repeat center;
-
-margin-left:910px;
+	background: url(../img/arrows-slider.png) no-repeat 0 -200px;
+	margin-left:786px;
 }
 #right_arrow:hover {
-background: url(../img/btn_next02.png) no-repeat center;
+	background-position: -50px -200px;
 }
 .slides_container {
-height:490px;
-float:left;
-width:960px;
+	margin-left:50px;
+	height:200px;
+	float:left;
+	width:840px;
 }
 .pagination  {
-position: absolute;
-float: left;
-width: 180px;
-height:22px;
-margin-top: 465px;
-margin-left: 440px;
-z-index: 998;
+	position: absolute;
+	float: left;
+	width: 180px;
+	height:22px;
+	margin-top: 210px;
+	margin-left: 380px;
+	z-index: 998;
 }
 .pagination li {
-float:left;
-margin-left: 5px;
-width: 10px;
-height: 10px;
-border-radius:5px;
-background-color:#FFF;
-text-align: center;
-font-size: 2px;
+	float:left;
+	margin-left: 5px;
+	width: 10px;
+	height: 10px;
+	border-radius:5px;
+	background-color:#979797;
+	text-align: center;
+	font-size: 2px;
 }
 .pagination li:hover{
-background-color:#231f20;
+	background-color:#44a1d1;
 }
 .pagination li.current {
-background-color:#231f20;
+	background-color:#44a1d1;
 }
 .pagination li a {
-color: #6d6d6a;
-text-decoration: none;
-display: block;
-line-height:18px;
-opacity: 0;
+	color: #6d6d6a;
+	text-decoration: none;
+	display: block;
+	line-height:18px;
+	opacity: 0;
 }
 .pagination li:hover a,.pagination li.current a{
-color: #000;
+	color: #000;
 }
